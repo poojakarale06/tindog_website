@@ -1,0 +1,218 @@
+body{
+    font-family:"Montserrat";
+    margin: 0;
+   
+}
+
+#title{
+    background-color: #ff4c68;
+    color:#fff;
+    padding-bottom: 7%;
+   
+    
+}
+
+h1{
+    font-family: "Montserrat";
+   font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+ .container-fluid{ 
+    padding: 3% 15%;
+}
+
+/* navigation-bar */
+
+.navbar{
+    padding:0 0 4.5rem; /*0 to top, 0  to left and right , 0 to bottom*/
+}
+
+.navbar-brand{
+    font-family: "ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    /* padding-left: 18px;
+    padding-right: 18px; */
+
+    padding: 0 18px;  /*o for top bottom  and 18px for left and right*/
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+
+/*Download buttons*/
+
+.download-button{
+    margin: 5% 3% 5% 0;  /*this is clockwise margin 5% FOR TOP ; 3% FOR RIGHT; 5% FOR ; 5% ON LEFT; 0 FOR BOTTOM*/
+}
+
+.title-image{
+    width: 25%;
+    padding-left: 5%;
+    transform:rotate(25deg) ;  /* for rotating the image*/
+     position: absolute;
+
+    
+}
+
+/* features -section */
+
+.feature-box{
+    text-align: center;
+    padding: 4.5%;
+   
+    
+}
+#features{
+    padding: 5% 7%;
+    background-color: #fff;
+    position:relative;
+    z-index: 1;
+
+    /* without setting z-index we also make title image hide behind features section just by changing position 
+    of feature to relative and title image to absolute becoze when we do position absolute it is go out of html flow
+    and when we make relative position it is not go out of flow and it appears on top. */
+
+
+   
+    
+}
+
+.icon{
+    padding: 1.5rem;
+    color: #ef8172;
+}
+
+
+
+h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align:center;
+    font-size: 2rem;
+
+
+}
+
+.feature-text{
+    color: #8f8f8f;
+    padding: 0 4.5rem;
+}
+.icon:hover{
+    color: #ff4c68;
+}
+  
+
+/* testimonials section */
+
+#testimonials{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+    
+}
+ h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    line-height: 2;
+    padding: 0 2rem;
+    font-weight: bold;
+ }
+
+ .testimonial-image{
+    border-radius: 50%;
+    width: 100px;
+   height: 100px;
+   margin: 2%;
+}
+ /* press section */
+ #press{
+     background-color: #ef8172;
+     text-align: center;
+     padding-bottom: 3rem;
+   
+ }
+.press-img{
+    width: 15%;
+    margin: 10px 20px 20px; /*ie 10px from top; 20px from left and right; 20px from bottom*/
+   
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/* .carousel-icon{
+    height:20px;
+    width: 20px;
+    color:black;
+} */
+ #pricing{
+    text-align: center; 
+    padding: 5% 7%;
+ }
+
+ .card{
+    margin: 5% 7%;
+
+ }
+
+
+    /* adding media query breakpoint to make muh resposnsive our website */
+
+@media (max-width:1028px){
+    .title-image{
+        position: static;       /* ie screen width 1028 px and tyapeksha kmi zali tr image static hoyel and text align hoyel center*/
+        transform: rotate(0);    /* rotate 0 ie image  becomes straight */
+        width: 50%;
+    }
+
+    #title{
+        text-align: center;
+    }
+ }
+
+ /* <!-- Call to Action --> */
+
+ #cta{
+    text-align: center;
+    background-color: #ff4c68;
+    padding-bottom: 1%;
+    
+ }
+
+ h4{
+    color:#fff;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 7% 15% 0;
+    line-height:1.5;
+ }
+
+ /* footer section */
+ #footer{
+    text-align: center;
+    background-color: #fff;
+    padding: 7% 15%;
+ }
+
+ .footer-icon{
+    margin: 1.5%;
+    padding-bottom: 2%;
+ }
+
+ .footer-icon:hover{
+    color:lightslategrey;
+ }
+
+
+
+   
